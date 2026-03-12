@@ -26,9 +26,8 @@ jobs:
   
     - name: Upload TestNG Reports
       if: always()
-      uses: actions/upload-artifact@v4
-            
+      uses: actions/upload-artifact@v4         
       with:
-      - name: TestNG-report
+        name: TestNG-report
         path: target/surefire-reports
-        retention-days: 30
+        
