@@ -19,7 +19,7 @@ public class Testone {
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://demoqa.com/frames");
 		driver.manage().window().maximize();
