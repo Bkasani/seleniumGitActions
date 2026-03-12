@@ -15,7 +15,7 @@ public class Testone {
 
 		ChromeOptions options = new ChromeOptions();
 
-		options.addArguments("--headless");
+		options.addArguments("--headless=new");
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 
