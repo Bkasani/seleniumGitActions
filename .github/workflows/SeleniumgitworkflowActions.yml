@@ -29,6 +29,6 @@ jobs:
       uses: actions/upload-artifact@v4
             
       with:
-        name: TestNG-report
+      - name: TestNG-report
         path: target/surefire-reports
         retention-days: 30
